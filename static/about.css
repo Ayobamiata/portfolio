@@ -1,0 +1,27 @@
+
+body{
+    background-image:url('about.png');
+    text-align:left; /* Align text to the right */
+    background-size: cover; /* Make it fill the page */
+    background-position: left top ; /* Center the image */
+    background-repeat: no-repeat;
+    color:white;
+    padding-left:120px; /* Add space from the left edge */
+    padding-top:80px;
+    font-family:Arial, sans-serif;
+    }
+
+
+
+.info{
+    text-align:left;
+    font-size:20px;
+    padding-top:70px;
+    width:600px;
+}
+
+h1{
+    font-size:70px;
+}
+
+

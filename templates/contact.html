@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CONTACT AYOBAMI ATA</title>
+    <link rel="stylesheet" href="static/contact.css">
+</head>
+<body>
+    <h1>Hi,again!I know you loved it here.</h1>
+    <h3>Kindly send a message to contact me.</h3>
+
+
+    <form class="all" method="POST" action="{{ url_for('contact') }}">
+    {{ form.hidden_tag() }}
+
+        <div class="field">
+            {{form.Name.label}}: <br>
+            {{form.Name(class="tall_field",size=75)}}
+        </div>
+
+        <div class="field">
+            {{form.Email.label}}: <br>
+            {{form.Email( class="tall_field",size=75)}}
+        </div>
+
+        <div class="field">
+            {{form.Message.label}}: <br>
+            {{form.Message(rows=10,cols=70)}}
+        </div>
+
+        <div class="field" >
+            {{form.Submit()}}
+        </div>
+    </form>
+
+</body>
+</html>

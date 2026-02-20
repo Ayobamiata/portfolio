@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Messages</title>
+</head>
+<body>
+  <h1>Contact Messages</h1>
+<!--  <a href="{{ url_for('home') }}">Back home</a>-->
+  <ul>
+    {% for m in messages %}
+      <li>
+        <strong> Sender {{m.id}} <br>{{ m.name }} ({{ m.email }})</strong>
+        <em>{{ m.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</em>
+        <p>{{ m.message }}</p>
+        <hr>
+      </li>
+    {% else %}
+      <li>No messages found.</li>
+    {% endfor %}
+  </ul>
+
+    <a href="{{ url_for('home') }}">Back home</a>
+
+</body>
+</html>
